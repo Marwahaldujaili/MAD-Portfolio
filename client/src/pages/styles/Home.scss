@@ -1,0 +1,148 @@
+@import "../../components/styles/base";
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    background-color: $white-smoke ;
+
+    .img-container {
+        background-image: url('../../media/images/christin-hume-Hcfwew744z4-unsplash.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: fixed;
+        min-width: 80%;
+        padding: 20px;
+        top: 80%;
+        left: 50%;
+        text-align: center; // Center the text within the container
+        // margin-top: 20px; // Adjust as needed
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        font-family: $codefont;
+        font-size: 1rem;
+        color: $mint;
+
+        p {
+            padding-left: 5px;
+
+            &::before {
+                content: "<";
+                left: 5px;
+            }
+
+            &:after {
+                content: ">";
+                position: absolute;
+                right: 2px;
+            }
+
+            &:after,
+            &:before {
+                position: absolute;
+                top: 0;
+                color: $mint;
+                margin-top: 9px;
+                font-size: 1.9rem;
+                line-height: 1.3rem;
+                animation-name: opacity;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+
+    ul {
+        height: 30px;
+        overflow: hidden;
+
+        li {
+            list-style-type: none;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            animation-name: swap;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+
+@keyframes opacity {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes swap {
+
+    0%,
+    12.66%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    18.66%,
+    29.32% {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    36.32%,
+    48.98% {
+        transform: translate3d(0, -200%, 0);
+    }
+
+    52.98%,
+    72.64% {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    86.64%,
+    99.3% {
+        transform: translate3d(0, -0%, 0);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        div {
+            min-width: 650px;
+            font-size: 2rem;
+
+            &:after,
+            &:before {
+                font-size: 3rem;
+                line-height: 2.8rem;
+            }
+
+            p {
+                margin-left: 10px;
+            }
+        }
+
+        ul {
+            height: 60px;
+
+            li {
+                padding-bottom: 50px;
+            }
+        }
+    }
+}
