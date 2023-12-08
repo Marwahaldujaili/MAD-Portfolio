@@ -7,18 +7,18 @@ body {
   padding: 0;
   background-color: $celadon;
   overflow-x: hidden;
-  overflow-y: hidden;
-  height: 90vh;
+  // overflow-y: hidden;
+  height: auto;
 }
 
 .app-container {
   display: grid;
   grid-template-rows: auto auto;
-  height: 100vh;
-  width: 95vw;
-  margin: 30px auto;
+  // height: 100vh;
+  // width: 95vw;
+  margin: 30px 40px 30px 30px;
   background-color: $white-smoke;
-  overflow: hidden;
+  // overflow: auto;
 }
 
 .navbar {
@@ -54,7 +54,7 @@ body {
 
 .main-content {
   width: auto;
-  height: 100vh;
+  // height: 100vh;
   // padding: 20px;
   margin: 40px;
   margin-top: 0 !important;

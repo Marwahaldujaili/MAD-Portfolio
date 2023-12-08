@@ -1,0 +1,30 @@
+@import "../../components/styles/base";
+
+.about-content {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        // height: 100vh;
+        background-color: $white-smoke ;
+    h1, h2 {
+        color: $mint;
+        margin: 20px auto;
+        font-family: $headings;
+    }
+
+    .about-me, .skills {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        background-color:  $celadon;
+        padding: 20px;
+        height: 100%;
+
+        p {
+            margin: 10px auto;
+            font-family: $codefont ;
+        }
+    }
+}
