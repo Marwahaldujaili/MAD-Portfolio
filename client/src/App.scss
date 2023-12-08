@@ -1,24 +1,19 @@
 /* App.css */
-@import "../src/components/styles/_base.scss";
-
+@import "./styles/base";
 
 body {
   margin: 0;
   padding: 0;
   background-color: $celadon;
   overflow-x: hidden;
-  overflow-y: hidden;
-  height: 90vh;
+  height: auto;
 }
 
 .app-container {
   display: grid;
   grid-template-rows: auto auto;
-  height: 100vh;
-  width: 95vw;
-  margin: 30px auto;
+  margin: 30px;
   background-color: $white-smoke;
-  overflow: hidden;
 }
 
 .navbar {
@@ -54,10 +49,7 @@ body {
 
 .main-content {
   width: auto;
-  height: 100vh;
-  // padding: 20px;
   margin: 40px;
   margin-top: 0 !important;
   margin-bottom: 20px;
-  // border: solid 1px red;
 }

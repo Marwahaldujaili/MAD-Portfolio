@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/Home.scss";
+import "../styles/Home.scss";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import GitHubIcon from "@mui/icons-material/GitHub";

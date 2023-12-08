@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+//colors
+$celadon: rgba(156, 217, 188, 1);
+$mulberry: rgba(191, 78, 161, 1);
+$mint: rgba(99, 191, 148, 1);
+$mulberry-light:  rgba(191, 78, 161, 0.401);
+$amaranth-pink: rgba(242, 160, 198, 1);
+$white-smoke: rgba(242, 242, 242, 1);
+
+
+// google fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Lato&display=swap');
+
+$headings: 'Changa', sans-serif;
+$text: 'Lato',
+    sans-serif;

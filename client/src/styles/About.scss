@@ -1,0 +1,70 @@
+@import "./base";
+
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: $white-smoke ;
+    opacity: 0;
+    animation: fadeInFromTop 1s ease-out forwards;
+
+    @keyframes fadeInFromTop {
+        0% {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    h1,
+    h2 {
+        color: $mint;
+        margin: 20px auto;
+        font-family: $headings;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 20px;
+        height: 100%;
+        color: $mulberry;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.262);
+        font-size: 1.3rem;
+        line-height: 34px;
+        text-justify: inter-ideograph;
+
+        p {
+            margin: 10px auto;
+            font-family: $text ;
+        }
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        height: 100%;
+        font-family: $text ;
+
+        .skills-sections {
+            background-color: $mulberry-light;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.262);
+
+            h3,
+            h5 {
+                margin: 10px auto;
+            }
+        }
+    }
+}
