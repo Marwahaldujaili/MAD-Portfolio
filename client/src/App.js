@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className="app-container">
       <Nav onPageChange={handlePageChange} />
-      <Main page={currentPage} />
+      <Main page={currentPage} onPageChange={handlePageChange} />
     </div>
   );
 };

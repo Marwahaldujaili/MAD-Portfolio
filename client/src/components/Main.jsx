@@ -5,9 +5,9 @@ import Contact from "../pages/Contact";
 import Blog from "../pages/Blog";
 import Projects from "../pages/Projects";
 
-const Main = ({ page }) => {
+const Main = ({ page, onPageChange }) => {
   const pageComponents = {
-    home: <Home />,
+    home: <Home onPageChange={onPageChange} />,
     about: <About />,
     contact: <Contact />,
     blog: <Blog />,

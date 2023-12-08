@@ -23,22 +23,12 @@
         flex-direction: row;
         justify-content: center;
         flex-wrap: nowrap;
-        position: fixed;
         min-width: 80%;
         padding: 20px;
-        top: 80%;
-        left: 50%;
         text-align: center;
-        transform: translate(-50%, -50%);
-        overflow: hidden;
         font-family: $codefont;
         font-size: 1.2rem;
         color: $mulberry;
-
-        p {
-            padding-left: 5px;
-
-        }
 
         ul {
             height: 20px;
@@ -67,7 +57,6 @@
             }
         }
 
-
         @keyframes swap {
 
             0%,
@@ -91,19 +80,38 @@
         }
     }
 
-
     .icon-container {
-        position: fixed;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
         padding: 20px;
-        font-size: 1rem;
         color: $mint;
         display: flex;
 
         div {
             margin: 5px;
+        }
+    }
+
+    .bottom-container {
+        display: flex;
+        min-width: 90%;
+        justify-content: space-around;
+        bottom: 0;
+        position: fixed;
+
+        a,
+        button {
+            width: 50%;
+            height: 10vh;
+            text-align: center;
+            justify-content: center;
+            padding: 5%;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: $headings;
+            color: $mulberry;
+            font-size: 1.3rem;
+            border: none;
+            background-color: $white-smoke;
+            cursor: pointer;
         }
     }
 }

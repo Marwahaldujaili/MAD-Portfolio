@@ -4,7 +4,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-function Home() {
+function Home({ onPageChange }) {
+  const handleContactClick = () => {
+    onPageChange && onPageChange("contact");
+  };
   return (
     <div className="home-content">
       <div className="img-container"></div>
@@ -19,14 +22,42 @@ function Home() {
       </div>
       <div className="icon-container">
         <div>
-          <LinkedInIcon />
+          <a
+            href="https://www.linkedin.com/in/marwahaldujaili/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedInIcon />
+          </a>
         </div>
         <div>
-          <GitHubIcon />
+          <a
+            href="https://github.com/marwahaldujaili"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GitHubIcon />
+          </a>
         </div>
         <div>
-          <YouTubeIcon />
+          <a
+            href="https://www.youtube.com/marwahaldujaili"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <YouTubeIcon />
+          </a>
         </div>
+      </div>
+      <div className="bottom-container">
+        <a
+          href="https://drive.google.com/uc?id=1ekPMnzxROqzXofMftGSFcNNbFhWL0RWy&export=download"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download CV
+        </a>
+        <button onClick={handleContactClick}>Contact me</button>
       </div>
     </div>
   );
