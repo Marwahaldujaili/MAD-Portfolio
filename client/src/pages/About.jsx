@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/About.scss";
+import "../styles/About.scss";
 
 function About() {
   return (
@@ -24,7 +24,7 @@ function About() {
       <h2>My Skills</h2>
 
       <section className="skills">
-        <section>
+        <section className="skills-sections">
           <h3>Web Developer</h3>
           <p>I love to code from scratch and bring ideas to life!</p>
           <h6>Languages and Tools</h6>
@@ -33,13 +33,19 @@ function About() {
             React.js/ Node.js/ MaterialUI/ FontAwesome/ Git & Github/ Postman
           </p>
         </section>
-        <section>
+        <section className="skills-sections">
           <h3>Trainer/Tutor</h3>
-          <p>I love teaching and helping people enhance their IT skills.</p>
+          <p>
+            Passionate about teaching, I find fulfillment in assisting
+            individuals in enhancing their IT skills.
+          </p>
           <h6>Area of expertise</h6>
-          <p>Web Development/ Classroom Management Tools/  Assessment and Survey Apps/ Operating Systems/ Microsoft Office/ Google Docs/ Others</p>
+          <p>
+            Web Development/ Classroom Management Tools/ Assessment and Survey
+            Apps/ Operating Systems/ Microsoft Office/ Google Docs/ Others
+          </p>
         </section>
-        <section>
+        <section className="skills-sections">
           <h3>Designer</h3>
           <p>I enjoy designing and photo manipulation.</p>
           <h6>Tools</h6>

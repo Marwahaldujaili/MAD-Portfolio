@@ -1,12 +1,12 @@
 * {
-  margin: 0px;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 //colors
@@ -29,24 +29,24 @@ $headings: 'Changa', sans-serif;
 $codefont: "Source Code Pro", monospace;
 
 @mixin flexy {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @mixin mylinks {
-  text-decoration: none;
-  color: $silver;
+    text-decoration: none;
+    color: $silver;
 }
 
 @mixin main {
-  width: 100%;
-  height: 100vh;
-  background-color: $silver;
+    width: 100%;
+    height: 100vh;
+    background-color: $silver;
 }
 
 @mixin para {
-  color: $red;
-  font-family: $codefont;
-  font-size: 1.2rem;
+    color: $red;
+    font-family: $codefont;
+    font-size: 1.2rem;
 }
