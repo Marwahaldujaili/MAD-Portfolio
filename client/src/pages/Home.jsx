@@ -27,7 +27,7 @@ function Home({ onPageChange }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LinkedInIcon />
+            <LinkedInIcon className="social-icons" />
           </a>
         </div>
         <div>
@@ -36,7 +36,7 @@ function Home({ onPageChange }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <GitHubIcon />
+            <GitHubIcon className="social-icons" />
           </a>
         </div>
         <div>
@@ -45,7 +45,7 @@ function Home({ onPageChange }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <YouTubeIcon />
+            <YouTubeIcon className="social-icons" />
           </a>
         </div>
       </div>
