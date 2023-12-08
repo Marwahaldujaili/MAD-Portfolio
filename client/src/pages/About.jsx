@@ -27,7 +27,7 @@ function About() {
         <section className="skills-sections">
           <h3>Web Developer</h3>
           <p>I love to code from scratch and bring ideas to life!</p>
-          <h6>Languages and Tools</h6>
+          <h5>Languages and Tools</h5>
           <p>
             HTML/ CSS/ SCSS/ Bootstrap/ JavaScript/ MonogoDB/Express.js/
             React.js/ Node.js/ MaterialUI/ FontAwesome/ Git & Github/ Postman
@@ -39,7 +39,7 @@ function About() {
             Passionate about teaching, I find fulfillment in assisting
             individuals in enhancing their IT skills.
           </p>
-          <h6>Area of expertise</h6>
+          <h5>Area of expertise</h5>
           <p>
             Web Development/ Classroom Management Tools/ Assessment and Survey
             Apps/ Operating Systems/ Microsoft Office/ Google Docs/ Others
@@ -48,7 +48,7 @@ function About() {
         <section className="skills-sections">
           <h3>Designer</h3>
           <p>I enjoy designing and photo manipulation.</p>
-          <h6>Tools</h6>
+          <h5>Tools</h5>
           <p>Adobe Photoshop/ Adobe Illustrator/ Canva/ Figma</p>
         </section>
       </section>
