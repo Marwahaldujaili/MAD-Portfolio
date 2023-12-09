@@ -12,15 +12,17 @@ body {
 .app-container {
   display: grid;
   grid-template-rows: auto auto;
-  margin: 30px;
+  margin: 20px;
   background-color: $white-smoke;
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
+  background-color: $mulberry;
+  padding: 10px;
   width: 100%;
-  height: 120px;
+  height: 100px;
   justify-content: space-between;
   z-index: 1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.262);
@@ -33,7 +35,7 @@ body {
     font-family: $headings;
     font-size: 0.9rem;
     text-transform: uppercase;
-    padding: 10px;
+    // padding: 20px;
     cursor: pointer;
 
     &:hover {
@@ -42,14 +44,14 @@ body {
   }
 
   img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
   }
 }
 
 .main-content {
   width: auto;
-  margin: 40px;
+  margin: 20px;
   margin-top: 0 !important;
   margin-bottom: 20px;
 }
