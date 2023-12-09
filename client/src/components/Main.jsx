@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Blog from "../pages/Blog";
-import Projects from "../pages/Projects";
+import Work from "../pages/Work";
 
 const Main = ({ page, onPageChange }) => {
   const pageComponents = {
@@ -11,7 +11,7 @@ const Main = ({ page, onPageChange }) => {
     about: <About />,
     contact: <Contact />,
     blog: <Blog />,
-    projects: <Projects />,
+    work: <Work />,
   };
 
   const selectedPage = pageComponents[page] || <p>Page not found.</p>;

@@ -1,0 +1,10 @@
+@import "./base";
+
+.work-content {
+    @include pageStyle;
+
+    h1 {
+        @include myHeadings;
+    }
+}
+

@@ -18,10 +18,10 @@ const Nav = ({ onPageChange }) => {
       <button onClick={() => handleNavigation("about")}>
         <PersonPinOutlinedIcon /> <br /> About
       </button>
-      <button onClick={() => handleNavigation("projects")}>
+      <button onClick={() => handleNavigation("work")}>
         <DashboardOutlinedIcon />
         <br />
-        Projects
+        Work
       </button>
       <button onClick={() => handleNavigation("blog")}>
         <AssistantOutlinedIcon />
