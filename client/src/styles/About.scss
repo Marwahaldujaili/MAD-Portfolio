@@ -37,10 +37,10 @@
         padding: 20px;
         height: 100%;
         color: $mulberry;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.262);
+        box-shadow: 0 2px 7px #00000043;
         font-size: 1.3rem;
         line-height: 34px;
-        text-justify: inter-ideograph;
+        text-align: center;
 
         p {
             margin: 10px auto;
@@ -54,16 +54,36 @@
         margin-top: 20px;
         height: 100%;
         font-family: $text ;
+        text-align: center;
 
         .skills-sections {
-            background-color: $mulberry-light;
+            background-color: $white-smoke;
             padding: 20px;
             margin: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.262);
+            box-shadow: 0 2px 7px rgba(0, 0, 0, 0.262);
+            transition: transform 0.3s ease-in-out;
+
+            // &:hover {
+            //     transform: scale(1.1);
+            //     /* Adjust the scale factor as needed */
+            // }
+
+            p {
+                margin: 20px auto;
+            }
 
             h3,
             h5 {
                 margin: 10px auto;
+                font-family: $headings;
+                text-transform: uppercase;
+                color: $mulberry;
+            }
+
+            hr {
+                border: 0;
+                border-bottom: 0.5px solid $celadon;
+                margin: 10px 30px;
             }
         }
     }
