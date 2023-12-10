@@ -4,31 +4,43 @@ import PersonPinOutlinedIcon from "@mui/icons-material/PersonPinOutlined";
 import DashboardOutlinedIcon from "@mui/icons-material/DashboardOutlined";
 import AssistantOutlinedIcon from "@mui/icons-material/AssistantOutlined";
 import AlternateEmailOutlinedIcon from "@mui/icons-material/AlternateEmailOutlined";
+import { Link } from "react-router-dom";
+import "../styles/Nav.scss";
 
-const Nav = ({ onPageChange }) => {
-  const handleNavigation = (page) => {
-    onPageChange(page);
-  };
-
+const Nav = () => {
   return (
     <div className="navbar">
-      <button onClick={() => handleNavigation("home")}>
-        <img src={logo} alt="Logo" />
-      </button>
-      <button onClick={() => handleNavigation("about")}>
-        <PersonPinOutlinedIcon /> <br /> About
-      </button>
-      <button onClick={() => handleNavigation("projects")}>
-        <DashboardOutlinedIcon />
-        <br />
-        Projects
-      </button>
-      <button onClick={() => handleNavigation("blog")}>
-        <AssistantOutlinedIcon />
-        <br />
-        Blog
-      </button>
-      <button onClick={() => handleNavigation("contact")}><AlternateEmailOutlinedIcon/><br/>Contact</button>
+      <div>
+        <Link to="/">
+          <img src={logo} alt="Logo" />
+        </Link>
+      </div>
+      <div>
+        <Link to="/about">
+          <PersonPinOutlinedIcon /> <br /> About
+        </Link>
+      </div>
+      <div>
+        <Link to="/work">
+          <DashboardOutlinedIcon />
+          <br />
+          Work
+        </Link>
+      </div>
+      <div>
+        <Link to="/blog">
+          <AssistantOutlinedIcon />
+          <br />
+          Blog
+        </Link>
+      </div>
+      <div>
+        <Link to="/contact">
+          <AlternateEmailOutlinedIcon />
+          <br />
+          Contact
+        </Link>
+      </div>
     </div>
   );
 };

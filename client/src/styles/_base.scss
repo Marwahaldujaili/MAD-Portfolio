@@ -9,7 +9,7 @@
 $celadon: rgba(156, 217, 188, 1);
 $mulberry: rgba(191, 78, 161, 1);
 $mint: rgba(99, 191, 148, 1);
-$mulberry-light:  rgba(191, 78, 161, 0.401);
+$mulberry-light: rgba(191, 78, 161, 0.401);
 $amaranth-pink: rgba(242, 160, 198, 1);
 $white-smoke: rgba(242, 242, 242, 1);
 
@@ -21,3 +21,34 @@ $white-smoke: rgba(242, 242, 242, 1);
 $headings: 'Changa', sans-serif;
 $text: 'Lato',
     sans-serif;
+
+
+@mixin pageStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width:90%;
+    margin: 20px auto;
+    background-color: $white-smoke;
+    opacity: 0;
+    animation: fadeInFromTop 1s ease-out forwards;
+
+    @keyframes fadeInFromTop {
+        0% {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+@mixin myHeadings {
+    color: $mint;
+    margin: 10px auto;
+    font-family: $headings;
+}
