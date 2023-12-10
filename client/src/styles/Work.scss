@@ -16,17 +16,61 @@
         gap: 5px;
 
         .card {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             height: 100px;
             background-position: top;
             background-size: cover;
             background-repeat: no-repeat;
             margin: 2px;
-            border: 0.5px solid $mint;
+            box-shadow: rgba(60, 67, 62, 0.32) 0px 1px 2px 0px, rgba(60, 67, 64, 0.15) 0px 1px 3px 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            .card-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+                transform: translateY(100%);
+                margin: 0;
+                z-index: 1;
+                background-color: $mint ;
+                width: 100%;
+                height: 100%;
+                font-family: $text;
+                font-size: 0.8em;
+                padding: 20px;
+                color: $white-smoke;
+            }
 
             &:hover {
-                filter: none;
+                .card-text {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
 
+            .card-links {
+                display: flex;
+
+                a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    font-size: 0.2em;
+                    color: $white-smoke;
+
+                    &:hover {
+                        color: $celadon ;
+                    }
+                }
             }
         }
 
@@ -65,17 +109,54 @@
             grid-column: span 1;
             grid-row: span 1;
             background-image: url('../media/images/work/MADlogo.png');
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                font-family: $headings;
+                font-size: 0.8em;
+                cursor: pointer;
+                text-decoration: none;
+                z-index: 1;
+                opacity: 0;
+
+                &:hover {
+                    color: $celadon;
+                }
+            }
         }
 
         .card7 {
             grid-column: span 1;
             grid-row: span 1;
-            background-image: url('../media/images/work/marwabake.png');
+            box-shadow: none;
+
         }
 
         .card8 {
             grid-column: span 1;
             grid-row: span 1;
+            background-color: $mulberry;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $mulberry;
+                border: none;
+                color: $white-smoke;
+                font-family: $headings;
+                font-size: 0.8em;
+                text-transform: uppercase;
+                cursor: pointer;
+                text-decoration: none;
+
+                &:hover {
+                    color: $celadon;
+                }
+            }
         }
 
     }
