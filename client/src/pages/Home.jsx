@@ -3,11 +3,9 @@ import "../styles/Home.scss";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { Link } from "react-router-dom";
 
-function Home({ onPageChange }) {
-  const handleContactClick = () => {
-    onPageChange && onPageChange("contact");
-  };
+function Home() {
   return (
     <div className="home-content">
       <div className="img-container"></div>
@@ -57,7 +55,7 @@ function Home({ onPageChange }) {
         >
           Download CV
         </a>
-        <button onClick={handleContactClick}>Contact me</button>
+        <Link to="/Contact">Contact Me</Link>
       </div>
     </div>
   );

@@ -28,7 +28,8 @@ $text: 'Lato',
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 100%;
+    width:90%;
+    margin: 20px auto;
     background-color: $white-smoke;
     opacity: 0;
     animation: fadeInFromTop 1s ease-out forwards;

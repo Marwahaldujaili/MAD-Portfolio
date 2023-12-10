@@ -1,21 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
-import Main from "./components/Main";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import Work from "./pages/Work";
 import "./App.scss";
 
-
 const App = () => {
-  const [currentPage, setCurrentPage] = useState("home");
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
-
   return (
-    <div className="app-container">
-      <Nav onPageChange={handlePageChange} />
-      <Main page={currentPage} onPageChange={handlePageChange} />
-    </div>
+    <BrowserRouter>
+      <div className="app-container">
+        <Nav />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/work" element={<Work />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 };
 

@@ -30,9 +30,10 @@ function About() {
           <hr />
           <h5>Languages and Tools</h5>
           <p>
-            HTML | CSS | SCSS | Bootstrap | JavaScript | MonogoDB |Express.js |
-            React.js | Node.js | MaterialUI | FontAwesome | Git & Github |
-            Postman
+            HTML | CSS | SCSS | LESS | Bootstrap | JavaScript | MonogoDB
+            |Express.js | React.js | Node.js | Vite | Tailwindcss | MaterialUI |
+            FontAwesome | Git & Github | Postman | TypeScript | Vue.js | Next.js
+            | Flutter.dev | Shopify.dev
           </p>
         </section>
         <section className="skills-sections">
@@ -45,7 +46,7 @@ function About() {
           <h5>Area of expertise</h5>
           <p>
             Web Development | Classroom Management Tools | Assessment and Survey
-            Apps | Operating Systems | Microsoft Office | Google Docs | Others
+            Apps | Operating Systems | Microsoft Office | Google Docs
           </p>
         </section>
         <section className="skills-sections">

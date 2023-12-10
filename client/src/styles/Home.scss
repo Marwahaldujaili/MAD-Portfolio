@@ -116,8 +116,7 @@
         z-index: 1;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.262);
 
-        a,
-        button {
+        a {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -126,7 +125,7 @@
             width: 50%;
             color: $white-smoke;
             font-family: $headings;
-            font-size: 1.3rem;
+            font-size: 1.3em;
             text-transform: uppercase;
             padding: 10px;
             cursor: pointer;
@@ -140,29 +139,29 @@
 }
 
 
-@media screen and (min-width: 768px) {
-    .main {
-        div {
-            min-width: 650px;
-            font-size: 2rem;
+// @media screen and (min-width: 768px) {
+//     .main {
+//         div {
+//             min-width: 650px;
+//             font-size: 2rem;
 
-            &:after,
-            &:before {
-                font-size: 3rem;
-                line-height: 2.8rem;
-            }
+//             &:after,
+//             &:before {
+//                 font-size: 3rem;
+//                 line-height: 2.8rem;
+//             }
 
-            p {
-                margin-left: 10px;
-            }
-        }
+//             p {
+//                 margin-left: 10px;
+//             }
+//         }
 
-        ul {
-            height: 60px;
+//         ul {
+//             height: 60px;
 
-            li {
-                padding-bottom: 50px;
-            }
-        }
-    }
-}
+//             li {
+//                 padding-bottom: 50px;
+//             }
+//         }
+//     }
+// }
