@@ -1,0 +1,10 @@
+@import "./base";
+
+.contact-content {
+    @include pageStyle;
+
+    h1,
+    h2 {
+        @include myHeadings;
+    }
+}
