@@ -7,4 +7,93 @@
     h2 {
         @include myHeadings;
     }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        label {
+            display: none;
+        }
+
+        label,
+        input,
+        textarea,
+        button {
+            margin: 10px;
+            padding: 10px;
+            border: none;
+            font-family: $text;
+            border: 1px solid $mint;
+            color: $mulberry;
+            box-sizing: border-box;
+            transition: border-color 0.3s, box-shadow 0.3s;
+
+            &:focus {
+                outline: none;
+                border-color: $mulberry;
+                box-shadow: 0 0 5px $mulberry;
+            }
+        }
+
+        textarea {
+            height: 200px;
+            resize: vertical;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $mulberry;
+            border: none;
+            color: $white-smoke;
+            font-family: $headings;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: none;
+
+            &:hover {
+                color: $celadon;
+            }
+        }
+    }
+
+    .msg {
+        font-family: $text;
+
+    }
+
+    .icon-container {
+        height: 10vh;
+        display: flex;
+
+        div {
+            margin: 5px;
+        }
+
+        .social-icons {
+            font-size: 40px;
+            color: $mint;
+            transition: color 0.3s ease-in;
+
+            &:hover {
+                color: $mulberry;
+                animation: iconHoverAnimation 0.5s ease;
+            }
+        }
+    }
+
+    @keyframes iconHoverAnimation {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+    }
 }

@@ -4,6 +4,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
 import notifyRoute from "./routes/notifyRoute.js";
+import contactMeRoute from "./routes/contactMeRoute.js";
 
 dotenv.config();
 
@@ -11,6 +12,7 @@ const app = express();
 app.use(cors()); // Enable CORS for all routes
 app.use(bodyParser.json());
 app.use("/blog", notifyRoute);
+app.use("/contact", contactMeRoute);
 
 mongoose
   .connect(process.env.DB_URI)

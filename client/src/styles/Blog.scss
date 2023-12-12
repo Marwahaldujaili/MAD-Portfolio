@@ -42,10 +42,13 @@
                 outline: none;
                 width: 180px;
                 border-radius: 0;
+                box-sizing: border-box;
+                transition: border-color 0.3s, box-shadow 0.3s;
 
                 &:focus {
                     outline: none;
-                    font-family: $text;
+                    border-color: $mulberry;
+                    box-shadow: 0 0 5px $mulberry;
                 }
             }
 
