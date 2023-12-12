@@ -4,7 +4,6 @@ const EmailsToNotify = new Schema(
   {
     email: {
       type: String,
-      unique: true,
     },
   },
   { timestamps: true }
