@@ -6,7 +6,7 @@ const sendNotificationEmail = async (recipientEmail) => {
       service: "gmail",
       auth: {
         user: "aldujailimarwa@gmail.com",
-        pass: "fnpx ktog eonk xhrq",
+        pass: "zsqw gqxe iyum nmzb",
       },
     });
 
