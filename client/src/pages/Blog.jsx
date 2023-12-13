@@ -26,7 +26,7 @@ function Blog() {
       setEmail("");
     } catch (error) {
       console.error("Error subscribing:", error);
-      toast.error("An error occurred. Please try again later.");
+      toast.error(error.message);
     }
   };
   return (
@@ -38,7 +38,7 @@ function Blog() {
             My Blog is currently under constructions. <br />
             It should be live soon!
           </p>
-          <div className="form-div">
+          <form className="form-div">
             <input
               type="email"
               placeholder="Enter your email"
@@ -46,7 +46,7 @@ function Blog() {
               onChange={(e) => setEmail(e.target.value)}
             />
             <button onClick={handleNotifyClick}>Notify Me</button>
-          </div>
+          </form>
         </div>
       </div>
       <ToastContainer

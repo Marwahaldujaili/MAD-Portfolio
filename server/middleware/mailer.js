@@ -13,7 +13,7 @@ const sendNotificationEmail = async (recipientEmail) => {
     await transporter.sendMail({
       from: "marwah@aldujaili.com",
       to: recipientEmail,
-      subject: "Notification from Your Blog",
+      subject: "Marwah Al-Dujaili's Blog",
       text: "Thank you for subscribing. You will be notified when the blog is ready!",
     });
 
