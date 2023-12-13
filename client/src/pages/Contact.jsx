@@ -10,7 +10,6 @@ function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [submitMessage, setSubmitMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,6 +30,9 @@ function Contact() {
         throw new Error(`Error: ${response.statusText}`);
       }
       toast.success("I've got your message and I will get back to you soon!");
+      setEmail("");
+      setMessage("");
+      setName("");
     } catch (error) {
       console.error("Error submitting form:", error);
       toast.error("An error occurred. Please try again later.");

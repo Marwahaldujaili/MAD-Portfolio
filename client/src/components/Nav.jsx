@@ -10,34 +10,31 @@ import "../styles/Nav.scss";
 const Nav = () => {
   return (
     <div className="navbar">
-      <div>
-        <Link to="/">
-          <img src={logo} alt="Logo" />
-        </Link>
-      </div>
+      <Link to="/">
+        <img src={logo} alt="Logo" />
+      </Link>
+
       <div>
         <Link to="/about">
-          <PersonPinOutlinedIcon /> <br /> About
+          <PersonPinOutlinedIcon />
+          About
         </Link>
       </div>
       <div>
         <Link to="/work">
           <DashboardOutlinedIcon />
-          <br />
           Work
         </Link>
       </div>
       <div>
         <Link to="/blog">
           <AssistantOutlinedIcon />
-          <br />
           Blog
         </Link>
       </div>
       <div>
         <Link to="/contact">
           <AlternateEmailOutlinedIcon />
-          <br />
           Contact
         </Link>
       </div>

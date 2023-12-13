@@ -17,7 +17,7 @@
     .text-container {
         height: 10vh;
         display: flex;
-        flex-direction: row;    
+        flex-direction: row;
         justify-content: center;
         flex-wrap: nowrap;
         min-width: 90%;
@@ -38,7 +38,9 @@
                 animation-name: swap;
                 animation-duration: 8s;
                 animation-iteration-count: infinite;
+
             }
+
         }
 
         @keyframes opacity {
@@ -74,6 +76,15 @@
                 transform: translateY(-300%);
             }
         }
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.2rem;
+
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 1.2rem; // Adjust font size for desktop
+        }
     }
 
     .icon-container {
@@ -92,6 +103,18 @@
             &:hover {
                 color: $mulberry;
                 animation: iconHoverAnimation 0.5s ease;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .social-icons {
+                font-size: 50px; // Adjust icon size for tablet
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .social-icons {
+                font-size: 60px; // Adjust icon size for desktop
             }
         }
     }
@@ -127,7 +150,7 @@
             width: 50%;
             color: $white-smoke;
             font-family: $headings;
-            font-size: 1.3em;
+            font-size: 1em;
             text-transform: uppercase;
             padding: 10px;
             cursor: pointer;
@@ -135,6 +158,18 @@
 
             &:hover {
                 color: $celadon;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            a {
+                font-size: 1.5em; // Adjust button font size for tablet
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            a {
+                font-size: 2em; // Adjust button font size for desktop
             }
         }
     }

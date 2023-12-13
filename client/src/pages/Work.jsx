@@ -114,14 +114,14 @@ function Work() {
             </div>
           </div>
         </div>
-        <div className="card card6">
+        {/* <div className="card card6">
           <Link to="/">Home
           </Link>
         </div>
         <div className="card card7"></div>
         <div className="card card8">
           <Link to="/contact">Contact Me</Link>
-        </div>
+        </div> */}
       </section>
     </div>
   );

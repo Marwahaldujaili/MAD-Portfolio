@@ -24,6 +24,10 @@
             margin: 10px auto;
             font-family: $text ;
         }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 1.4em;
+        }
     }
 
     .skills {
@@ -60,6 +64,18 @@
                 border-bottom: 0.8px solid $celadon;
                 margin: 10px 30px;
             }
+        }
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+
+            .skills-sections {
+                flex-basis: 33%;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 1.3em;
         }
     }
 }
