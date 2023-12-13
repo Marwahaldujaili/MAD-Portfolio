@@ -17,24 +17,28 @@ const Nav = () => {
       <div>
         <Link to="/about">
           <PersonPinOutlinedIcon />
+          <br />
           About
         </Link>
       </div>
       <div>
         <Link to="/work">
           <DashboardOutlinedIcon />
+          <br />
           Work
         </Link>
       </div>
       <div>
         <Link to="/blog">
           <AssistantOutlinedIcon />
+          <br />
           Blog
         </Link>
       </div>
       <div>
         <Link to="/contact">
           <AlternateEmailOutlinedIcon />
+          <br />
           Contact
         </Link>
       </div>
