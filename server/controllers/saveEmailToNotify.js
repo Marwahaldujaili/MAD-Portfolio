@@ -7,12 +7,11 @@ export const saveEmailToNotify = async (req, res) => {
   try {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      return res.status(400).send("Invalid email format");
+      return res.status(400).json({
+        error: "Invalid email format. Please provide a valid email address.",
+      });
     }
-    const existingEmail = await EmailsToNotify.findOne({ email });
-    if (existingEmail) {
-      return res.status(400).send("We already have your email");
-    }
+
     const newEmail = new EmailsToNotify({ email });
     await newEmail.save();
     await sendNotificationEmail(email);
@@ -20,6 +19,6 @@ export const saveEmailToNotify = async (req, res) => {
     res.status(200).send("Subscription successful!");
   } catch (error) {
     console.error("Error subscribing:", error);
-    res.status(500).send("Internal Server Error");
+    res.status(500).send("Internal Server Error: " + error.message);
   }
 };

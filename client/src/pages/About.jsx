@@ -26,14 +26,18 @@ function About() {
       <section className="skills">
         <section className="skills-sections">
           <h3>Web Developer</h3>
-          <p>I love to code from scratch and bring ideas to life!</p>
+          <p>
+            I love to code from scratch and bring ideas to life! I'm always
+            learning something new!
+          </p>
           <hr />
           <h5>Languages and Tools</h5>
           <p>
             HTML | CSS | SCSS | LESS | Bootstrap | JavaScript | MonogoDB
             |Express.js | React.js | Node.js | Vite | Tailwindcss | MaterialUI |
-            FontAwesome | Git & Github | Postman | TypeScript | Vue.js | Next.js
-            | Flutter.dev | Shopify.dev
+            FontAwesome | Git & Github | Postman | TypeScript
+            {/* | Vue.js | Next.js
+            | Flutter.dev | Shopify.dev */}
           </p>
         </section>
         <section className="skills-sections">
@@ -45,16 +49,22 @@ function About() {
           <hr />
           <h5>Area of expertise</h5>
           <p>
-            Web Development | Classroom Management Tools | Assessment and Survey
+            Web Development | Course Management Tools | Assessment and Survey
             Apps | Operating Systems | Microsoft Office | Google Docs
           </p>
         </section>
         <section className="skills-sections">
           <h3>Designer</h3>
-          <p>I enjoy designing and photo manipulation.</p>
+          <p>
+            I enjoy designing and creating digital content. I also have
+            experience with video and photo editing.
+          </p>
           <hr />
           <h5>Tools</h5>
-          <p>Adobe Photoshop | Adobe Illustrator | Canva | Figma</p>
+          <p>
+            Adobe Photoshop | Adobe Illustrator | Canva | Figma | Adobe
+            Captivate | Camtasia | Articulate
+          </p>
         </section>
       </section>
     </div>

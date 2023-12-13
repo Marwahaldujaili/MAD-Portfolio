@@ -17,12 +17,15 @@
         color: $mulberry;
         box-shadow: 0 2px 7px #00000043;
         font-size: 1.2rem;
-        //line-height: 34px;
         text-align: center;
 
         p {
             margin: 10px auto;
             font-family: $text ;
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 1.4em;
         }
     }
 
@@ -60,6 +63,18 @@
                 border-bottom: 0.8px solid $celadon;
                 margin: 10px 30px;
             }
+        }
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+
+            .skills-sections {
+                flex-basis: 33%;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 1.3em;
         }
     }
 }

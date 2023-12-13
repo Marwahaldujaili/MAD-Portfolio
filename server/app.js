@@ -9,7 +9,7 @@ import contactMeRoute from "./routes/contactMeRoute.js";
 dotenv.config();
 
 const app = express();
-app.use(cors()); // Enable CORS for all routes
+app.use(cors());
 app.use(bodyParser.json());
 app.use("/blog", notifyRoute);
 app.use("/contact", contactMeRoute);
