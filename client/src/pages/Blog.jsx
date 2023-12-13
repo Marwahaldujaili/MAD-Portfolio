@@ -6,8 +6,10 @@ import "react-toastify/dist/ReactToastify.css";
 function Blog() {
   const [email, setEmail] = useState("");
 
-  const handleNotifyClick = async () => {
+  const handleNotifyClick = async (e) => {
     try {
+      e.preventDefault(); // Add this line to prevent default form submission
+
       const response = await fetch(
         `${process.env.REACT_APP_BACKEND_URL}/blog/notify`,
         {
@@ -21,9 +23,12 @@ function Blog() {
 
       if (!response.ok) {
         throw new Error(`Error: ${response.statusText}`);
+      } else {
+        console.log("Success! Blog is ready!");
+        setEmail("");
+
+        toast.success("You will be notified when the blog is ready!");
       }
-      toast.success("You will be notified when the blog is ready!");
-      setEmail("");
     } catch (error) {
       console.error("Error subscribing:", error);
       toast.error(error.message);
@@ -45,7 +50,9 @@ function Blog() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <button onClick={handleNotifyClick}>Notify Me</button>
+            <button type="submit" onClick={handleNotifyClick}>
+              Notify Me
+            </button>
           </form>
         </div>
       </div>
