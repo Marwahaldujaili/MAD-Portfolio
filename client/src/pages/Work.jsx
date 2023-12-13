@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Work.scss";
-import { Link } from "react-router-dom";
 import LanguageIcon from "@mui/icons-material/Language";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
@@ -114,14 +113,6 @@ function Work() {
             </div>
           </div>
         </div>
-        {/* <div className="card card6">
-          <Link to="/">Home
-          </Link>
-        </div>
-        <div className="card card7"></div>
-        <div className="card card8">
-          <Link to="/contact">Contact Me</Link>
-        </div> */}
       </section>
     </div>
   );

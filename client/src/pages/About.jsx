@@ -57,13 +57,13 @@ function About() {
           <h3>Designer</h3>
           <p>
             I enjoy designing and creating digital content. I also have
-            experience with video and photo editing.{" "}
+            experience with video and photo editing.
           </p>
           <hr />
           <h5>Tools</h5>
           <p>
             Adobe Photoshop | Adobe Illustrator | Canva | Figma | Adobe
-            Captivate | Camtasia | Articulate{" "}
+            Captivate | Camtasia | Articulate
           </p>
         </section>
       </section>

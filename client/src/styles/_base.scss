@@ -19,8 +19,7 @@ $white-smoke: rgba(242, 242, 242, 1);
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Lato&display=swap');
 
 $headings: 'Changa', sans-serif;
-$text: 'Lato',
-    sans-serif;
+$text: 'Lato', sans-serif;
 
 
 @mixin pageStyle {
@@ -28,7 +27,7 @@ $text: 'Lato',
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width:90%;
+    width: 90%;
     margin: 20px auto;
     background-color: $white-smoke;
     opacity: 0;
