@@ -7,13 +7,13 @@ function About() {
       <h1>About Me</h1>
       <section className="about-me">
         <p>
-          I am Marwah, a full-stack web developer based in Germany, with
+          I am Marwah, a full-stack web developer based in Germany with
           over 14 years of experience as an Educational Technology Trainer in
           Dubai.
         </p>
         <p>
           A self-taught fast learner, I recently completed a Fullstack Web
-          Development course at DCI, Berlin specializing in
+          Development course at DCI in Berlin specializing in
           the MERN stack.
         </p>
         <p>
