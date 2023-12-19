@@ -14,6 +14,9 @@ app.use(bodyParser.json());
 app.use("/blog", notifyRoute);
 app.use("/contact", contactMeRoute);
 
+app.get("/test", (req, res) => {
+  res.send("Server is running!");
+});
 mongoose
   .connect(process.env.DB_URI)
   .then(() => console.log("connected"))
