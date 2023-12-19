@@ -39,7 +39,7 @@ function Home() {
         </div>
         <div>
           <a
-            href="https://www.youtube.com/marwahaldujaili"
+            href="https://www.youtube.com/marwaaldujaili"
             target="_blank"
             rel="noopener noreferrer"
           >
