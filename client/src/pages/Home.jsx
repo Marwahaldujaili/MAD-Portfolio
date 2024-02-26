@@ -49,10 +49,7 @@ function Home() {
       </div>
       <div className="bottom-container">
         <a
-          href="https://drive.google.com/file/d/1Q5uztRJeuLhGd5mGFSvQVz36SdVDAnwU/view"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          href="https://drive.google.com/uc?export=download&id=1Q5uztRJeuLhGd5mGFSvQVz36SdVDAnwU">
           Download CV
         </a>
         <Link to="/Contact">Contact Me</Link>
